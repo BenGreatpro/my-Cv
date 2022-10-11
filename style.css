@@ -3,12 +3,18 @@ body {
     margin: 0px;
     text-align: center;
     font-family: 'Merriweather', serif;
+    @media screen (min-width:480px) {
+        text-align: center;
+    }
 }
 h1 {
     font-size: 562.5%;
     margin: 50px auto 0 auto;
     font-family: 'Sacramento', cursive;
     color: #25316D;
+    @media screen (min-width:480px) {
+        margin: auto;
+    }
     
 }
 h2 {
@@ -17,6 +23,10 @@ h2 {
     color: #7895B2;
     font-weight: normal;
     padding-bottom: 10px;
+    @media screen (min-width:480px) {
+        margin: auto;
+        padding-bottom: 8px;
+    }
 }
 h3 {
     font-family: 'Montserrat', sans-serif;
@@ -45,11 +55,16 @@ hr {
     background-color: #8BBCCC;
     position: relative;
     padding: 100px;
-    
+    @media screen (min-width:480px) {
+        padding: 80px;
+    }
 }
 
 .middleBox {
     margin: 6.25rem 0;
+    @media screen (min-width:480px) {
+        margin: auto;
+    }
 }
 .bottomBox{
     background-color: #66bfbf;
@@ -59,12 +74,20 @@ hr {
    color: #eaf6f6; 
    font-size: 0.75rem;
    padding: 20px;
+   @media screen (min-width:480px) {
+    padding: 18px;
+}
 }
 
 .skill-row{
     width: 50%;
     margin: 6.25rem auto 6.25rem auto;
     text-align: left;
+    @media screen (min-width:480px) {
+        margin: auto;
+        text-align: left;
+        width: 40%;
+    }
     
 }
 
@@ -72,11 +95,21 @@ hr {
     width: 25%;
     float: left;
     margin-right: 30px;
+    @media screen (min-width:480px) {
+        margin-right: auto;
+        float: left;
+        width: 0;
+    }
 }
 .img-skill{
     width: 25%;
     float: right;
     margin-left: 30px;
+    @media screen (min-width:480px) {
+        margin-left: auto;
+        float: right;
+        width: 0;
+    }
 }
 .pro {
     text-decoration: underline;
@@ -93,6 +126,10 @@ hr {
 .bottom-cloud {
     position: absolute;
     bottom: 25rem;
+    @media screen (min-width:480px) {
+        position: relative;
+        width: 0;
+    }
        
 }
 
@@ -100,11 +137,19 @@ hr {
     position: relative;
     left: 30%;
     top: 20px;
+    @media screen (min-width:480px) {
+        position: relative;
+        width: 0;
+    }
 }
 .img-p, .img-skil, .img-skill {
     height: 12.5rem;
     width: 12.5rem;
     border-radius: 100%;
+    @media screen (min-width:480px) {
+        height: 10rem;
+        width: 10rem;
+    }
 }
 
 .btn {
@@ -134,26 +179,24 @@ hr {
     text-decoration: none;
   }
 
-  @media screen and (max-width: 600px) {
-    .topBox{
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
+  
+  /* @media screen and (min-width: 768px) {
+    .img-p, .img-skil, .img-skill {
+    margin: auto;
+    width: 100%;
     }
-    .top-cloud{
-        position: absolute;
-        align-items: center;
-        left: 30%;
+    
+    .topBox{
+        margin: auto;
+        width: 100%;
 
     }
     .middleBox{
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
+        margin: auto;
+        width: 100px;
     }
     .bottomBox{
+        margin: auto;
         width: 100%;
-        max-height: 0;
-        overflow: hidden;
     }
-  }
+} */
