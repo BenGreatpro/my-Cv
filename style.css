@@ -49,7 +49,7 @@ hr {
 }
 
 .middleBox {
-    margin: 100px 0;
+    margin: 6.25rem 0;
 }
 .bottomBox{
     background-color: #66bfbf;
@@ -63,7 +63,7 @@ hr {
 
 .skill-row{
     width: 50%;
-    margin: 100px auto 100px auto;
+    margin: 6.25rem auto 6.25rem auto;
     text-align: left;
     
 }
@@ -92,7 +92,7 @@ hr {
 
 .bottom-cloud {
     position: absolute;
-    bottom: 400px;
+    bottom: 25rem;
        
 }
 
@@ -102,8 +102,8 @@ hr {
     top: 20px;
 }
 .img-p, .img-skil, .img-skill {
-    height: 200px;
-    width: 200px;
+    height: 12.5rem;
+    width: 12.5rem;
     border-radius: 100%;
 }
 
@@ -132,4 +132,28 @@ hr {
     background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topBox{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .top-cloud{
+        position: absolute;
+        align-items: center;
+        left: 30%;
+
+    }
+    .middleBox{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .bottomBox{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
   }
